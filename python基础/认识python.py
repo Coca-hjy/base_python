@@ -1,3 +1,23 @@
 '''
-哈哈
+变量：
+    定义：在python中用来存储数据的
+    分类：Number(数字)--(int(有符号整形),(long(长整形[也可以代表八进制和十六进制])),float(浮点型),complex(复数))
+         布尔类型(True,Flase)
+          String(字符串)
+          List(列表)
+          Type(元祖)
+          Dictionary(字典)
+标示符和关键字：
+    标示符：
+        定义：开发人员在程序中自定义的一些符号和名称.标示符是自己定义的，如变量名，函数等等
+        规则：标示符由字母，下划线和数字组成，且数字不能开头
+        命名规则：见名如意
+                 驼峰命名法
+    关键字：
+          定义：python一些具有特殊功能的标示符
+          （and,as,assert,break,class,contiue,def,del,elif,else,except..）
+          通过命令查看当前系统python的关键字
+          （1.import keyword
+            2.keyword.kwlist
+          ）
 '''
