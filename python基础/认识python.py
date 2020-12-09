@@ -223,4 +223,10 @@ import random
         if i==5:
             continue
         print(i)
+
+
+第三章：字符串,列表,元祖,字典
+
+3.1 字符串介绍
+    
 '''
