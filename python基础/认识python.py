@@ -91,6 +91,136 @@ not	not x	  布尔"非"         如果 x 为 True，返回 False 。如果 x 为
         注意点------->:可以与else使用；
                        elif必须与if一起使用，否则报错
 2.3 if 嵌套：
+(当需要满足条件去做事情的这种情况需要用if
+当满足条件时做事情A，不满足条件做事情B的这种情况使用if-else) 
 
-eeee          
+if应用：猜拳游戏
+import random
+
+    player = input('请输入：剪刀(0)  石头(1)  布(2):')
+
+    player = int(player)
+
+    computer = random.randint(0,2)
+
+    # 用来进行测试
+    #print('player=%d,computer=%d',(player,computer))
+
+    if ((player == 0) and (computer == 2)) or ((player ==1) and (computer == 0)) or ((player == 2) and (computer == 1)):
+        print('获胜，哈哈，你太厉害了')
+    elif player == computer:
+        print('平局，要不再来一局')
+    else:
+        print('输了，不要走，洗洗手接着来，决战到天亮')
+
+2.5 循环介绍
+        应用场景：  一般情况下，需要多次重复执行的代码，都可以使用循环的方式来完成
+                    循环不是必须要使用的，但是为了提高代码的重复使用率，所以有经验的开发者都会采用循环
+        eg：i = 0
+            while i<10000:
+            print("媳妇儿，我错了")
+            i+=1
+2.6 while循环：
+                格式：  while条件：
+                            条件A满足时，做事情A
+                            条件B满足时，做事情B
+                            条件C满足时，做事情C
+                            .....
+                代码解析：i = 0
+                         while i<5:
+                         print("当前是第%d次执行循环"%(i+1))
+                         print("i=%d"%i)
+                         i+=1
+2.7 while循环应用：
+                1.计算1-100的累计和(包含1-100)
+                i = 1
+                sum = 0
+                while i<=100:
+                    sum = sum + i
+                    i += 1
+                print("1~100的累积和为:%d"%sum)
+
+                2. 计算1~100之间偶数的累积和（包含1和100）
+                #encoding=utf-8
+
+                i = 1
+                sum = 0
+                while i<=100:
+                    if i%2 == 0:
+                        sum = sum + i
+                    i+=1
+
+                print("1~100的累积和为:%d"%sum)
+2.8 while循环的嵌套以及应用：
+        while嵌套及应用：
+            1.实现打印如下图形：
+            *
+            * *
+            * * *
+            * * * *
+            * * * * *
+            代码实现：
+            i = 1
+            while i<=5:
+
+            j = 1
+            while j<=i:
+                print("* ",end='')
+                j+=1
+
+            print("\n")
+            i+=1
+        while嵌套应用二：
+            九九乘法表代码实现：
+                i = 1
+                while i<=9:
+                    j=1
+                    while j<=i:
+                        print("%d*%d=%-2d "%(j,i,i*j),end='')
+                        j+=1
+                    print('\n')
+                    i+=1
+2.9 for 循环：
+            格式：
+                    for 临时变量in列表或者字符串等：
+                        循环满足条件时执行的代码
+                    else：
+                        循环不满足条件时执行的代码
+
+2.10 break和continue
+     break--->结束整个循环
+     continue--->结束本次循环，继续执行下一次的循环
+
+     注意点:break/continue只能用在循环中，除此以外不能单独使用
+            break/continue在嵌套循环中，只对最近的一层循环起作用
+
+    break在for循环中的用法：           
+    name = 'dongGe'             
+    for x in name:
+        print('----')
+        if x == 'g': 
+            break
+        print(x)
+    break在while循环中的用法：
+    i = 0
+    while i<10:
+        i = i+1
+        print('----')
+        print(i)
+
+    continue在for循环中的用法:
+    name = 'dongGe'
+    for x in name:
+        print('----')
+        if x == 'g': 
+            continue
+        print(x)
+    continue在while循环中的用法:
+    i = 0
+    while i<10:
+        i = i+1
+        print('----')
+        if i==5:
+            continue
+        print(i)
 '''
