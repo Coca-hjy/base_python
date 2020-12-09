@@ -1,1 +1,3 @@
-print("hahawa")
+print("haha")
+
+print(123)
