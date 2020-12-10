@@ -254,6 +254,45 @@ import random
      2.index--跟find()方法一样，只不过如果str不在mystr中会报一个异常
      3.count--返回str在start和end之间在mystr里面出现的次数
      4.replace--在mystr中的str1替换成str2，如果count指定，则替换不超过count次
+     5.split--以str为分隔符切片 mystr，如果 maxsplit有指定值，则仅分隔 maxsplit 个子字符串
+     6.capitalize--把字符串的第一个字符大写
+     7.title--把字符串的每个单词首字母大写
+     8.startswith--检查字符串是否是以 obj 开头, 是则返回 True，否则返回 False
+     9.endswith--检查字符串是否以obj结束，如果是返回True,否则返回 False
+     10.lower--转换 mystr 中所有大写字符为小写
+     11.upper--转换 mystr 中的小写字母为大写
+     12.strip--删除mystr字符串两端的空白字符
+     13.partition--把mystr以str分割成三部分,str前，str和str后
+     14.splitlines--按照行分隔，返回一个包含各行作为元素的列表
+     15.isalpha--如果 mystr 所有字符都是字母 则返回 True,否则返回 False
+     16.isdigit--如果 mystr 只包含数字则返回 True 否则返回 False
+     17.isalnum--如果 mystr 所有字符都是字母或数字则返回 True,否则返回 False
+     18.isspace--如果 mystr 中只包含空格，则返回 True，否则返回 False
+     19.join--mystr 中每个字符后面插入str,构造出一个新的字符串
 
+3.6 列表介绍
+    1.列表的格式
+    2.打印列表(按索引)
+3.7 列表的循环遍历及常规操作
+    1.使用for循环:
+    namesList = ['xiaoWang','xiaoZhang','xiaoHua']
+    for name in namesList:
+        print(name)
+    2.使用while循环:
+    namesList = ['xiaoWang','xiaoZhang','xiaoHua']
+
+    length = len(namesList)
+
+    i = 0
+
+    while i<length:
+        print(namesList[i])
+        i+=1
+    3.列表的相关操作
+        1.添加元素("增"append, extend, insert)
+        2.修改元素
+        3.查找元素("查"in, not in, index, count)
+        4.删除元素("删"del, pop, remove)
+        5.排序(sort, reverse)
 '''
 

@@ -21,22 +21,38 @@ else:
 
 #字符串，列表，元祖，字典
 #3.2 字符串输出
-name="xiaoming"
-position="讲师"
-address="北京市昌平区建材城西路金燕龙办公楼一层"
+# name="xiaoming"
+# position="讲师"
+# address="北京市昌平区建材城西路金燕龙办公楼一层"
 
-print("------------------")
-print("姓名:%s" %name)
-print("职位:%s" %position)
-print("地址:%s" %address)
-print("------------------")
+# print("------------------")
+# print("姓名:%s" %name)
+# print("职位:%s" %position)
+# print("地址:%s" %address)
+# print("------------------")
 
-#3.3 字符串输入
-userName = input('请输入用户名:')
-print("用户名为：%s"%userName)
+# #3.3 字符串输入
+# userName = input('请输入用户名:')
+# print("用户名为：%s"%userName)
 
-password = input('请输入密码:')
-print("密码为：%s"%password)
+# password = input('请输入密码:')
+# print("密码为：%s"%password)
+
+#3.8 列表的常规操作
+#append
+# A = ['xiaoWang','xiaoZhang','xiaoHua']
+
+# print("-----添加之前，列表A的数据-----")
+# for tempName in A:
+#     print(tempName)
+
+# #提示、并添加元素
+# temp = input('请输入要添加的学生姓名:')
+# A.append(temp)
+
+# print("-----添加之后，列表A的数据-----")
+# for tempName in A:
+#     print(tempName)
 #typle练习
 '''
 zodiac=("摩羯座","水瓶座","双鱼座","白羊座","金牛座","双子座","巨蟹座","狮子座","处女座","天秤座","天蝎座","射手座")
@@ -62,7 +78,7 @@ print(zodiac[n])
 
 #接收用户输入的年月日，判断用户的星座和生肖
 
-'''
+
 chinese_zodiac="猴鸡狗猪鼠牛虎兔龙蛇马羊"
 zodiac=("摩羯座","水瓶座","双鱼座","白羊座","金牛座","双子座","巨蟹座","狮子座","处女座","天秤座","天蝎座","射手座")
 zodiac_days=((1,20),(2,19),(3,21),(4,20),(5,21),(6,22),(7,23),(8,23),(9,23),(10,24),(11,23),(12,22))
@@ -76,7 +92,7 @@ while zodiac_days[n] < (month,day):
     n += 1
 print("您的生肖是%s,您的星座是%s"%(chinese_zodiac[year%12],zodiac[n]))
 
-'''
+
 
 
 
