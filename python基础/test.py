@@ -18,6 +18,25 @@ else:
         
 #         i+=1
 
+
+#字符串，列表，元祖，字典
+#3.2 字符串输出
+name="xiaoming"
+position="讲师"
+address="北京市昌平区建材城西路金燕龙办公楼一层"
+
+print("------------------")
+print("姓名:%s" %name)
+print("职位:%s" %position)
+print("地址:%s" %address)
+print("------------------")
+
+#3.3 字符串输入
+userName = input('请输入用户名:')
+print("用户名为：%s"%userName)
+
+password = input('请输入密码:')
+print("密码为：%s"%password)
 #typle练习
 '''
 zodiac=("摩羯座","水瓶座","双鱼座","白羊座","金牛座","双子座","巨蟹座","狮子座","处女座","天秤座","天蝎座","射手座")
@@ -59,6 +78,9 @@ print("您的生肖是%s,您的星座是%s"%(chinese_zodiac[year%12],zodiac[n]))
 
 '''
 
+
+
+#dict
 #输入1 继续运行此操作   输入0 退出
 '''
     无限次接收输入用户的年月日，判断用户的生肖和星座，并且统计出各个生肖和星座的人数

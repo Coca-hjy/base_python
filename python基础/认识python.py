@@ -237,5 +237,23 @@ import random
       zodiac_num=int_year%12
 
       print("您的生肖是%s"%chinese_zodiac[zodiac_num])
+
+      
+    字符串的定义:双引号或者单引号中的数据，就是字符串
+3.2 字符串的输出 
+3.3 字符串的输入
+3.4 下标和切片
+        1.下标：
+            定义:如果想取出部分字符，那么可以通过下标的方法且oython中下标从0开始
+        2.切片
+            定义：切片是指对操作的对象截取其中一部分的操作。字符串，列表，元祖都支持切片操作
+            切片的语法：[起始：结束：步长]
+3.5 字符串常规操作
+     1.find--检测str是否包含在mystr中,如果是返回开始的索引值,否则返回-1
+             mystr.find(str,0,len(mystr))
+     2.index--跟find()方法一样，只不过如果str不在mystr中会报一个异常
+     3.count--返回str在start和end之间在mystr里面出现的次数
+     4.replace--在mystr中的str1替换成str2，如果count指定，则替换不超过count次
+
 '''
 
