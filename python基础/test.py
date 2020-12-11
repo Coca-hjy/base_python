@@ -79,18 +79,18 @@ print(zodiac[n])
 #接收用户输入的年月日，判断用户的星座和生肖
 
 
-chinese_zodiac="猴鸡狗猪鼠牛虎兔龙蛇马羊"
-zodiac=("摩羯座","水瓶座","双鱼座","白羊座","金牛座","双子座","巨蟹座","狮子座","处女座","天秤座","天蝎座","射手座")
-zodiac_days=((1,20),(2,19),(3,21),(4,20),(5,21),(6,22),(7,23),(8,23),(9,23),(10,24),(11,23),(12,22))
-year=int(input("请输入您的出生年份:"))
-month=int(input("请输入您的出生月份:"))
-day=int(input("请输入您的出生日期:"))
-n=0
-while zodiac_days[n] < (month,day):
-    if month == 12 and day > 25:
-        break
-    n += 1
-print("您的生肖是%s,您的星座是%s"%(chinese_zodiac[year%12],zodiac[n]))
+# chinese_zodiac="猴鸡狗猪鼠牛虎兔龙蛇马羊"
+# zodiac=("摩羯座","水瓶座","双鱼座","白羊座","金牛座","双子座","巨蟹座","狮子座","处女座","天秤座","天蝎座","射手座")
+# zodiac_days=((1,20),(2,19),(3,21),(4,20),(5,21),(6,22),(7,23),(8,23),(9,23),(10,24),(11,23),(12,22))
+# year=int(input("请输入您的出生年份:"))
+# month=int(input("请输入您的出生月份:"))
+# day=int(input("请输入您的出生日期:"))
+# n=0
+# while zodiac_days[n] < (month,day):
+#     if month == 12 and day > 25:
+#         break
+#     n += 1
+# print("您的生肖是%s,您的星座是%s"%(chinese_zodiac[year%12],zodiac[n]))
 
 
 
@@ -101,3 +101,38 @@ print("您的生肖是%s,您的星座是%s"%(chinese_zodiac[year%12],zodiac[n]))
 '''
     无限次接收输入用户的年月日，判断用户的生肖和星座，并且统计出各个生肖和星座的人数
 '''
+
+#第三章作业集锦
+# a="hello world"
+# print(a.count("l"))
+# print(a.count("h"))
+
+# sheng=input("请输入您的家庭省份:")
+# shi=input("请输入您的家庭市区:")
+# xian=input("请输入您的家庭县区域:")
+
+# print("最终您的家庭地址是:%s" %sheng+shi+xian)
+
+print("欢迎来到我的世界！")
+username=input("请输入您的账号:")
+password=input("请输入您的密码:")
+if username == "472458040" and password == "123":
+    print("登录成功！")
+    choice=["1.添加名片","2.删除名片","3.修改名片","4.查询名片","5.退出系统","6.退出"]
+    print(choice)
+    input("请输入您要选择的序列号:")
+        # if choice == 0:
+        #     print("请您添加您想要的内容：")
+        # else:
+        #     print(choice)
+        #     input("请输入您要选择的序列号:")
+    
+else:
+    print("登录失败,请重新登录:")
+    username=input("请输入您的账号:")
+    password=input("请输入您的密码:")
+    
+
+
+
+
