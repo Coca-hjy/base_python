@@ -183,6 +183,8 @@ else:
     
 '''
 
+
+'''
 while True:
     print("*"*30)
     
@@ -196,7 +198,44 @@ while True:
     if  a == 5:
         print("退出成功!")
         break
+'''
 
 
 
+
+#使用lambda表达式
+
+# def add(arg1,arg2):
+#     return arg1+arg2
+# lambda arg1,arg2:arg1+arg2
+
+# sum=lambda arg1,arg2:arg1 + arg2
+
+# def judezodiac(month,day):
+#     n=0
+#     while (month,day) > zodiac_days[n]:
+#         if month == 12 and day > 22:
+#             break
+#         n += 1
+#     return zodiac[n]
+
+
+
+
+#使用内置函数filter
+
+'''
+chinese_zodiacs="猴鸡狗猪鼠牛虎兔龙蛇马羊"
+zodiacs=("摩羯座","水瓶座","双鱼座","白羊座","金牛座","双子座","巨蟹座","狮子座","处女座","天秤座","天蝎座","射手座")
+zodiac_days=((1,20),(2,19),(3,21),(4,20),(5,21),(6,22),(7,23),(8,23),(9,23),(10,24),(11,23),(12,22))
+
+year=int(input("请您输入你的呢出生年份："))
+month=int(input("请输入您的出生月份:"))
+day=int(input("请输入您的出生日期:"))
+
+result=filter(lambda x:x<(month,day),zodiac_days)
+# print(list(result))
+print(zodiacs[len(list(result))])
+
+'''
 
